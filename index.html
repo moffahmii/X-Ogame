@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X O</title>
+    <!-- FAVICOn -->
+    <link rel="shortcut icon" href="./imgs/tic-tac-toe-1996265-1689002.webp" type="image/x-icon">
+    <!-- FONT -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+
+    <main id="app">
+        <h2 id="title">Bored ? Let's play!</h2>
+        <div id="menu">
+            <h2>Choose Mode</h2>
+            <button id="vs-computer">Play vs Computer</button>
+            <button id="vs-player">Play vs Friend</button>
+        </div>
+
+        <div id="difficulty-menu" class="hidden">
+            <h2>Choose Computer Level</h2>
+            <button class="level-btn" data-level="easy">Easy</button>
+            <button class="level-btn" data-level="medium">Medium</button>
+            <button class="level-btn" data-level="hard">Hard</button>
+        </div>
+
+        <div id="player-choice-menu" class="hidden">
+            <h2>Choose Your Symbol</h2>
+            <button id="xplayer">X</button>
+            <button id="oplayer">O</button>
+        </div>
+
+        <div class="board hidden" role="grid" aria-label="Tic Tac Toe board">
+            <div class="cell" role="gridcell" tabindex="0"></div>
+            <div class="cell" role="gridcell" tabindex="0"></div>
+            <div class="cell" role="gridcell" tabindex="0"></div>
+            <div class="cell" role="gridcell" tabindex="0"></div>
+            <div class="cell" role="gridcell" tabindex="0"></div>
+            <div class="cell" role="gridcell" tabindex="0"></div>
+            <div class="cell" role="gridcell" tabindex="0"></div>
+            <div class="cell" role="gridcell" tabindex="0"></div>
+            <div class="cell" role="gridcell" tabindex="0"></div>
+        </div>
+
+        <div id="winner-popup">
+            <div id="winner-text"></div>
+        </div>
+
+        <div id="board-controls">
+            <button id="popup-play-again">Play Again</button>
+            <button id="popup-restart">Restart</button>
+        </div>
+    </main>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
