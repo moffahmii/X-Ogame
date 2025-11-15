@@ -280,5 +280,6 @@ function resetGame() {
         cell.classList.remove('winning-cell', 'x-color', 'o-color');
     });
     winnerPopup.classList.remove('show');
+    title.textContent = "Bored ? Let's play!";
     isPauseGame = false;
 }
